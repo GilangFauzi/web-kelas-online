@@ -29,26 +29,6 @@ You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
 ## Contributing
 
 Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
@@ -75,23 +55,32 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 2. Install dependencies.
      bash
      composer install
-     
+   
 
-3. Copy the .env.example file into .env and configure the .env file.
+4. Copy the .env.example file into .env and configure the .env file.
      bash
      cp .env.example .env
      php artisan key:generate
      
 
-4. Run the database migration.
+5. Run the database migration.
      bash
      php artisan migrate
      
+6. Run Seeder
+    bash
+    php artisan db:seed --class=UserSeeder
+    php artisan db:seed --class=MentorSeeder
+    php artisan db:seed --class=ClassesSeeder
+    php artisan db:seed --class=SubscriptionSeeder
 
-5. Run the Laravel development server.
+
+8. Run the Laravel development server.
      bash
      php artisan serve  
      The project is now accessible at [http://localhost:8000](http://localhost:8000).
+
+
    
     
 ## Directory Structure
