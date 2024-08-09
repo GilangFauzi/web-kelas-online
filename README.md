@@ -53,7 +53,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
      php artisan serve  
      The project is now accessible at [http://localhost:8000](http://localhost:8000).
 
-8. Open Postman & paste url
+8. Open Postman & Paste URL
    ```bash
    http://localhost:8000/api/calculate-revenue [Method: GET]
    http://localhost:8000/api/watch-time [Method: POST | Body form-data: user_id, class_id, minutes]
