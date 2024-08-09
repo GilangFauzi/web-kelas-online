@@ -34,13 +34,13 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
    
 
 4. Copy the .env.example file into .env and configure the .env file.
-     bash
      cp .env.example .env
+     ```bash
      php artisan key:generate
      
 
 5. Run the database migration.
-     bash
+     ```bash
      php artisan migrate
      
 6. Run Seeder
@@ -50,9 +50,8 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
    php artisan db:seed --class=ClassesSeeder
    php artisan db:seed --class=SubscriptionSeeder
 
-
-8. Run the Laravel development server.
-     bash
+7. Run the Laravel development server.
+     ```bash
      php artisan serve  
      The project is now accessible at [http://localhost:8000](http://localhost:8000).
 
