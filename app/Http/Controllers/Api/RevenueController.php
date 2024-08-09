@@ -30,6 +30,8 @@ class RevenueController extends Controller
             });
 
             $revenueDistribution = $this->calculateRevenueDistribution($totalMinutes, $classTimes, $mentorShare);
+            if(empty($revenueDistribution)) $revenueDistribution = "Data empty!, Please input the data first";
+
             return response()->json(['message' => 'Net division result by package price ' . $subscription->price, 'result' => $revenueDistribution]);
         } catch (\Exception $e) {
             return response()->json(['message' => 'Something Wrong!', 'result' => $e->getMessage()]);
