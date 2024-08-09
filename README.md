@@ -64,3 +64,41 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Installation
+
+1. Clone this repository.
+     bash
+     git clone https://github.com/GilangFauzi/web-kelas-online.git
+     
+
+2. Install dependencies.
+     bash
+     composer install
+     
+
+3. Copy the .env.example file into .env and configure the .env file.
+     bash
+     cp .env.example .env
+     php artisan key:generate
+     
+
+4. Run the database migration.
+     bash
+     php artisan migrate
+     
+
+5. Run the Laravel development server.
+     bash
+     php artisan serve  
+     The project is now accessible at [http://localhost:8000](http://localhost:8000).
+   
+    
+## Directory Structure
+
+Here is the main directory structure in the project:
+
+- app: Contains the business logic and application model.
+- public: Public access directory, including static files and application entry points.
+- resources: Resource files such as views and blade files.
+- routes: Route definition and route settings.
