@@ -1,0 +1,244 @@
+.btn-primary {
+    background-color: #b89664;
+    border-color: #bb9e71
+}
+.btn-primary:focus {
+    background-color: #b89664;
+    border-color: #bb9e71
+}
+
+.btn-outline-primary {
+    background-color: #ffffff;
+    border-color: #bb9e71;
+    color: #bb9e72
+}
+
+.btn-primary:hover {
+    background-color: #9e8052;
+    border-color: #bb9e71;
+}
+
+.btn-outline-primary:hover {
+    background-color: #9e8052;
+    border-color: #bb9e71;
+}
+
+.btn-outline-primary:focus {
+    border: none
+}
+
+.btn-outline-primary:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+.active-tab {
+    background-color: #b89664;
+    color: white;
+}
+
+.nav-link.active {
+    color: #bb9e72 !important;
+}
+
+.card-price-list {
+    background-color: #ffffff
+}
+
+.card-price-list:hover {
+    background-color: #e9e2d7;
+}
+
+.hero-section {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+@media (max-width: 576px) {
+    .btn {
+        width: 100%;
+    }
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-section .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-section-footer {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.hero-section-footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.hero-section-footer .overlay-footer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(77, 77, 77, 0.5);
+    z-index: 1;
+}
+
+.hero-section-footer .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.carousel-item img {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+}
+
+.carousel-images {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.carousel-images img {
+    max-width: 135px;
+    height: auto;
+}
+
+.carousel-images::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .carousel-images {
+        padding: 0 15px;
+    }
+}
+
+.custom-rounded-bottom {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.border-dashed {
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #949494;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(190, 190, 190);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bb9e72;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9c8461;
+}
+
+/* Default styling for the content wrapper */
+.content-wrapper {
+    max-width: 70%;
+}
+
+/* Make the content full-width on mobile screens */
+@media (max-width: 768px) {
+    .content-wrapper {
+        max-width: 100%;
+        padding: 0 15px; /* Add some padding to prevent the content from touching the edges */
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    background-color: #b89664; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 50%; /* Round shape */
+    width: 50px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    text-decoration: none;
+    font-size: 15px; /* Font size for the icon */
+    z-index: 9999; /* Ensure it's on top of other elements */
+    transition: opacity 0.3s ease;
+}
+
+/* Style for the icon inside the button */
+.back-to-top .fa {
+    margin: 0;
+}
+
+/* Show the button when scrolled down */
+.back-to-top.show {
+    opacity: 1;
+}
+
+/* Hide the button by default */
+.back-to-top {
+    opacity: 0;
+}
+
+/* Hover effect for the button */
+.back-to-top:hover {
+    background-color: #b89664; /* Darker background color on hover */
+}
+
+/* Smooth scroll effect */
+html {
+    scroll-behavior: smooth;
+}
+
