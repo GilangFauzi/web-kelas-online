@@ -14,22 +14,26 @@ class RevenueController extends Controller
 {
     public function calculate()
     {
-        $subscription = Subscription::first();
-        $netAmount = $this->calculateNetAmount($subscription->price);
-        $mentorShare = $this->calculateMentorShare($netAmount);
+        try {
+            $subscription = Subscription::first();
+            $netAmount = $this->calculateNetAmount($subscription->price);
+            $mentorShare = $this->calculateMentorShare($netAmount);
 
-        $totalMinutes = WatchTime::sum('minutes');
-        $classTimes = WatchTime::with('class')
-        ->select('class_id', DB::raw('SUM(minutes) as total_minutes'))
-        ->groupBy('class_id')
-        ->get()
-        ->map(function($item) {
-            $item->class = $item->class;
-            return $item;
-        });
+            $totalMinutes = WatchTime::sum('minutes');
+            $classTimes = WatchTime::with('class')
+            ->select('class_id', DB::raw('SUM(minutes) as total_minutes'))
+            ->groupBy('class_id')
+            ->get()
+            ->map(function($item) {
+                $item->class = $item->class;
+                return $item;
+            });
 
-        $revenueDistribution = $this->calculateRevenueDistribution($totalMinutes, $classTimes, $mentorShare);
-        return response()->json(['message' => 'Net division result by package price ' . $subscription->price, 'result' => $revenueDistribution]);
+            $revenueDistribution = $this->calculateRevenueDistribution($totalMinutes, $classTimes, $mentorShare);
+            return response()->json(['message' => 'Net division result by package price ' . $subscription->price, 'result' => $revenueDistribution]);
+        } catch (\Exception $e) {
+            return response()->json(['message' => 'Something Wrong!', 'result' => $e->getMessage()]);
+        }
     }
 
     // Menghitung jumlah uang bersih
