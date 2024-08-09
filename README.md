@@ -37,7 +37,6 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
      cp .env.example .env
      ```bash
      php artisan key:generate
-     
 
 5. Run the database migration.
      ```bash
@@ -58,7 +57,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 8. Open Postman & paste url
    ```bash
    http://localhost:8000/api/calculate-revenue [Method: GET]
-   http://localhost:8000/api/watch-time [Method: POST | Body form-date: user_id, class_id, minutes]
+   http://localhost:8000/api/watch-time [Method: POST | Body form-data: user_id, class_id, minutes]
    
 9. Alternatively, if you want to enter watch time data directly, run this seed (Optional)
    ```bash
