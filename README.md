@@ -21,46 +21,49 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## Installation
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+1. Clone this repository.
+     ```bash
+     git clone https://github.com/GilangFauzi/web-kelas-online.git
+     
+2. Install dependencies.
+     ```bash
+     composer install
+   
+4. Copy the **.env.example** file into **.env** and configure the **.env** file.
+     ```bash
+     php artisan key:generate
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+5. Run the database migration.
+     ```bash
+     php artisan migrate
+     
+6. Run Seeder
+      ```bash
+   php artisan db:seed --class=UserSeeder
+   php artisan db:seed --class=MentorSeeder
+   php artisan db:seed --class=ClassesSeeder
+   php artisan db:seed --class=SubscriptionSeeder
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+7. Run the Laravel development server.
+     ```bash
+     php artisan serve  
+     The project is now accessible at [http://localhost:8000](http://localhost:8000).
 
-## Laravel Sponsors
+8. Open Postman & Paste URL
+   ```bash
+   http://localhost:8000/api/calculate-revenue [Method: GET]
+   http://localhost:8000/api/watch-time [Method: POST | Body form-data: user_id, class_id, minutes]
+   
+9. Alternatively, if you want to enter watch time data directly, run this seed (Optional)
+   ```bash
+   php artisan db:seed --class=WatchTimeSeed
+## Directory Structure
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Here is the main directory structure in the project:
 
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- app: Contains the business logic and application model.
+- public: Public access directory, including static files and application entry points.
+- resources: Resource files such as views and blade files.
+- routes: Route definition and route settings.
