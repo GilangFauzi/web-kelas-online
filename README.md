@@ -61,7 +61,6 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 9. Alternatively, if you want to enter watch time data directly, run this seed (Optional)
    ```bash
    php artisan db:seed --class=WatchTimeSeed
-    
 ## Directory Structure
 
 Here is the main directory structure in the project:
