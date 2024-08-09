@@ -63,7 +63,9 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 You can download the Postman export file from this repository via the following link:
 
-[Download Postman Export File](Kelas Online.postman_collection.json)
+[Download Postman Export File](KelasOnline.postman_collection.json)
+
+if so, then please import the file into your postman.
 
 ## Directory Structure
 
