@@ -31,7 +31,6 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
      ```bash
      composer install
    
-
 4. Copy the **.env.example** file into **.env** and configure the **.env** file.
      ```bash
      php artisan key:generate
