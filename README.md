@@ -55,8 +55,14 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
      php artisan serve  
      The project is now accessible at [http://localhost:8000](http://localhost:8000).
 
-
+8. Open Postman & paste url
+   ```bash
+   http://localhost:8000/api/calculate-revenue [Method: GET]
+   http://localhost:8000/api/watch-time [Method: POST | Body form-date: user_id, class_id, minutes]
    
+9. Alternatively, if you want to enter watch time data directly, run this seed (Optional)
+   ```bash
+   php artisan db:seed --class=WatchTimeSeed
     
 ## Directory Structure
 
