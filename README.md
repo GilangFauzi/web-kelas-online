@@ -33,7 +33,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
      composer install
    
 
-4. Copy the .env.example file into .env and configure the .env file.
+4. Copy the **.env.example** file into .env and configure the **.env** file.
      cp .env.example .env
      ```bash
      php artisan key:generate
