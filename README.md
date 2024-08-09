@@ -48,8 +48,8 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 7. Run the Laravel development server.
      ```bash
-     php artisan serve  
-     The project is now accessible at [http://localhost:8000](http://localhost:8000).
+     php artisan serve
+The project is now accessible at [http://localhost:8000](http://localhost:8000).
 
 8. Open Postman & Paste URL
    ```bash
