@@ -34,7 +34,6 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
    
 
 4. Copy the **.env.example** file into **.env** and configure the **.env** file.
-     cp .env.example .env
      ```bash
      php artisan key:generate
 
