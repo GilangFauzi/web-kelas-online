@@ -27,7 +27,6 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
      ```bash
      git clone https://github.com/GilangFauzi/web-kelas-online.git
      
-
 2. Install dependencies.
      bash
      composer install
