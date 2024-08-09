@@ -24,7 +24,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 ## Installation
 
 1. Clone this repository.
-     bash
+     ```bash
      git clone https://github.com/GilangFauzi/web-kelas-online.git
      
 
